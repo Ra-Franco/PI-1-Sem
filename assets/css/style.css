@@ -1,0 +1,92 @@
+:root {
+    --dark-color: #484B4F;
+    --blue-color: #8299AF;
+    --lightblue-color: #C2DCF6;
+    --light-color: #CDD8E5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+nav {
+    height: 7vw;
+    background-color: black;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4.5vw;
+}
+
+
+.nav-tab {
+    background-color: #CDD8E5;
+    height: 2.5vw;
+}
+
+.nav-tab ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav-tab-items {
+    align-self: center;
+    padding-top: .6vw;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    align-self: center;
+    width: 500px;
+    border-bottom: 3px black solid;
+}
+
+.main-header-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-trending {
+    display: flex;
+}
+
+.news-cards-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+
+.news-cards-items {
+    background-color: blue;
+    width: 30vw;
+    height: 10vw;
+}
+
+.trending-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-cards-news {
+    background-color: green;
+    width: 24vw;
+    height: 7vw;
+}
