@@ -1,8 +1,14 @@
 :root {
-    --dark-color: #484B4F;
-    --blue-color: #8299AF;
-    --lightblue-color: #C2DCF6;
-    --light-color: #CDD8E5;
+    --azulmarinho-color: #1a2855;
+    --cinzaescuro-color: #333333;
+    --cinzamedio-color: #888888;
+    --cinzaclaro-color: #d3d3d3;
+    --braco-color: #fff;
+    --azulceleste-color: #70A9A1;
+    --cinzacarvao-color: #595959;
+    --prata-color: #c0c0c0;
+    --cinzapalido-color: #ececec;
+    --preto-color: #000;
 }
 
 * {
@@ -11,12 +17,16 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: var(--cinzapalido-color);
 }
 
 nav {
     height: 7vw;
-    background-color: black;
+    background-color: var(--preto-color);
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .nav-main {
@@ -26,32 +36,82 @@ nav {
     height: 4.5vw;
 }
 
-
-.nav-tab {
-    background-color: #CDD8E5;
-    height: 2.5vw;
+.nav-main h1 {
+    padding: 1vw;
+    padding-left: 2vw;
+    font-size: 40px;
+    align-self: center;
 }
 
+.nav-search {
+    padding: 1.5vw;
+}
+
+.nav-search input {
+    width: 40vw;
+    height: 1.5vw;
+    background-color: var(--azulmarinho-color);
+    padding-right: 0;
+    margin-right: 0;
+    text-indent: 20px;
+    border-radius: 5px;
+}
+
+.nav-search button {
+    margin-left: 0;
+    width: 5vw;
+    height: 1.5vw;
+    background-color: var(--azulceleste-color);
+    border-radius: 5px;
+}
+
+.nav-tab {
+    background-color: var(--cinzacarvao-color);
+    height: 2.5vw;
+    overflow: hidden;
+}
+
+
 .nav-tab ul {
-    display: flex;
+    overflow: hidden;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 .nav-tab-items {
-    align-self: center;
-    padding-top: .6vw;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-tab-items a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 3% 0;
+    height: 100%;
+}
+
+.nav-tab ul li a:hover {
+    background-color: var(--azulceleste-color);
 }
 
 .main-header {
     display: flex;
     justify-content: space-between;
+    padding: 3rem 3rem;
 }
 
 .line {
     align-self: center;
-    width: 500px;
-    border-bottom: 3px black solid;
+    width: 50.5vw;
+    border-bottom: 2px black solid;
 }
 
 .main-header-title {
@@ -59,8 +119,35 @@ nav {
     flex-direction: row;
 }
 
+.main-header-title h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-right: 5rem;
+    white-space: nowrap;
+}
+
 .main-trending {
     display: flex;
+    background-color: var(--braco-color);
+    width: 100%;
+    margin-left: 8rem;
+    align-items: center;
+    padding: 1vw;
+    justify-content: space-between;
+}
+
+.main-trending p {
+    font-size: 25px;
+    padding-left: 1vw;
+}
+
+.main-trending-button {
+    text-align: center;
+    background-color: var(--preto-color);
+    color: var(--braco-color);
+    width: 6vw;
+    height: 1.5vw;
+    border-radius: 5px;
 }
 
 .news-cards-header {
@@ -69,24 +156,28 @@ nav {
 }
 
 .news-cards {
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
+    padding-left: 3rem;
 }
 
 .news-cards-items {
     background-color: blue;
-    width: 30vw;
-    height: 10vw;
+    width: 32vw;
+    height: 40vh;
 }
 
 .trending-cards {
     display: flex;
     flex-direction: column;
+    width: 30%;
+
 }
 
 .trending-cards-news {
     background-color: green;
-    width: 24vw;
-    height: 7vw;
+    width: 26.5vw;
+    height: 16vh;
 }
