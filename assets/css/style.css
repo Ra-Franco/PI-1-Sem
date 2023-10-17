@@ -3,7 +3,7 @@
     --cinzaescuro-color: #333333;
     --cinzamedio-color: #888888;
     --cinzaclaro-color: #d3d3d3;
-    --braco-color: #fff;
+    --branco-color: #fff;
     --azulceleste-color: #70A9A1;
     --cinzacarvao-color: #595959;
     --prata-color: #c0c0c0;
@@ -102,11 +102,20 @@ a:link {
     background-color: var(--azulceleste-color);
 }
 
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 3rem;
+.that-way {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "main-title ."
+        "news-cards news-cards";
 }
+
+.main-header-title {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
 
 .line {
     align-self: center;
@@ -121,38 +130,15 @@ a:link {
 
 .main-header-title h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5rem;
     padding-right: 5rem;
     white-space: nowrap;
 }
 
-.main-trending {
-    display: flex;
-    background-color: var(--braco-color);
-    width: 100%;
-    margin-left: 8rem;
-    align-items: center;
-    padding: 1vw;
-    justify-content: space-between;
-}
-
-.main-trending p {
-    font-size: 25px;
-    padding-left: 1vw;
-}
-
-.main-trending-button {
-    text-align: center;
-    background-color: var(--preto-color);
-    color: var(--braco-color);
-    width: 6vw;
-    height: 1.5vw;
-    border-radius: 5px;
-}
 
 .news-cards-header {
-    display: flex;
-    justify-content: space-between;
+    grid-area: news-cards;
+    margin: 0;
 }
 
 .news-cards {
@@ -161,6 +147,7 @@ a:link {
     grid-template-columns: 1fr 1fr;
     list-style: none;
     padding-left: 3rem;
+    grid-column-gap: 2rem;
 }
 
 .news-cards-items {
@@ -169,11 +156,55 @@ a:link {
     height: 40vh;
 }
 
+#btn-vw-more {
+    width: 7%;
+    margin: 3% 47%;
+    padding: 0.7rem 0;
+    border-radius: 5px;
+    background-color: var(--azulmarinho-color);
+    color: var(--branco-color);
+}
+
+
+
+.main-trending {
+    display: flex;
+    background-color: var(--branco-color);
+    width: 100%;
+    align-items: center;
+    padding: 1vw 0;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+
+aside {
+    padding-right: 3rem;
+}
+
+.trending {
+    padding: 3rem 0;
+}
+
+.main-trending p {
+    font-size: 2rem;
+    padding-left: 1vw;
+}
+
+.main-trending-button {
+    text-align: center;
+    background-color: var(--preto-color);
+    color: var(--branco-color);
+    width: 6vw;
+    height: 1.5vw;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
 .trending-cards {
+    width: 29.5%;
     display: flex;
     flex-direction: column;
-    width: 30%;
-
+    justify-content: flex-start;
 }
 
 .trending-cards-news {
