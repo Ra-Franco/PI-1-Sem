@@ -19,9 +19,9 @@ function convertNewsApi(newsDetail) {
     return news;
 }
 
-newsApi.getNews = (pageSize = 8) => {
-    const url = `https://newsapi.org/v2/everything?q=${q}&from=${dateFrom}&pageSize=${pageSize}&language=${language}&sortBy=${sortBy}&apiKey=${apiKey}`;
-
+newsApi.getNews = (pageSize = 8, page = 1) => {
+    const url = `https://newsapi.org/v2/everything?q=${q}&from=${dateFrom}&pageSize=${pageSize}&page=${page}&language=${language}&sortBy=${sortBy}&apiKey=${apiKey}`;
+    console.log(url)
     return fetch(url)
         .then((response) => response.json())
         .then((data) => data.articles.map(convertNewsApi))
