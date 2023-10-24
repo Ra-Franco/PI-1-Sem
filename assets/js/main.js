@@ -6,8 +6,8 @@ const viewMoreButton = document.getElementById('viewMoreButton')
 
 function loadNewsItems(pageSize) {
     newsApi.getNews(pageSize, page).then((newsPromise = []) => {
-        const newHtml = newsPromise.map((news) =>
-
+        const newsPromiseFilter = newsPromise.filter((news) => news.author !== null)
+        const newHtml = newsPromiseFilter.map((news) =>
             `
                 <a style="padding: 0;" href="${news.url}">
                     <li class="news-cards-items" style="background-image
