@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Document</title>
+    <script src="assets/js/news-model.js" defer></script>
+    <script src="./assets/js/news-api.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/navbar.js" defer></script>
 </head>
 
 <body>
@@ -41,37 +44,12 @@
                 <span class="line"></span>
             </div>
             <div class="news-cards-header">
-                <ol class="news-cards">
-                    <a style="padding: 0;" href="https://biztoc.com/x/097fc192dd887e69">
-                        <li class="news-cards-items" style="background-image
-                    :url(https://c.biztoc.com/p/097fc192dd887e69/s.webp);
-                        background-size: 100% 100%;
-                        background-repeat: no-repeat;">
-                            <div class="news-cards-items-container">
-                                <div class="news-cards-items-content">
-                                    <p>Pervez Musharraf, Former Military Ruler of Pakistan, Dies at 79</p>
-                                </div>
-                                <div class="news-cards-items-date">
-                                    <p>By Ginny Dennis</p>
-                                    <span></span>
-                                    <p>Feb. 4, 2023</p>
-                                </div>
-                            </div>
-                        </li>
-                    </a>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
-                    <li class="news-cards-items">tese</li>
+                <ol id="news-cards" class="news-cards">
                 </ol>
 
             </div>
-            <button class="btn">View More</button>
+            <button id="viewMoreButton" class="btn">View More</button>
         </main>
-
         <aside>
             <div class="trending">
                 <div class="main-trending">
@@ -93,8 +71,6 @@
             </div>
         </aside>
     </div>
-
-
     <!--Footer do site-->
     <footer>
         <div class="boxs">
