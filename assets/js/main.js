@@ -4,9 +4,14 @@ let page = 1;
 const newsList = document.getElementById('news-cards')
 const viewMoreButton = document.getElementById('viewMoreButton')
 
-function loadNewsItems(pageSize) {
-    newsApi.getNews(pageSize, page).then((newsPromise = []) => {
-        const newsPromiseFilter = newsPromise.filter((news) => news.author !== null)
+viewMoreButton.addEventListener('click', () => {
+    page += 1;
+    loadNewsItems(pageSize, page);
+})
+
+function loadNewsItems(pageSize, qMain) {
+    newsApi.getNews(pageSize, page, qMain).then((newsPromise = []) => {
+        const newsPromiseFilter = newsPromise.filter((news) => news.author !== null || news.title !== "[Removed]" || news.urlToImage !== null)
         const newHtml = newsPromiseFilter.map((news) =>
             `
                 <a style="padding: 0;" href="${news.url}">
@@ -27,16 +32,8 @@ function loadNewsItems(pageSize) {
                     </li>
                 </a>
                 `
-
         ).join('')
-
         newsList.innerHTML += newHtml
     })
 }
-loadNewsItems(pageSize);
-
-viewMoreButton.addEventListener('click', () => {
-    page += 1;
-    console.log()
-    loadNewsItems(pageSize, page);
-})
+//loadNewsItems(pageSize, qMain);
