@@ -57,6 +57,7 @@ nav {
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 8vh;
+    width: 100%;
 }
 
 .nav-list {
@@ -296,7 +297,7 @@ aside {
 
 .trending-cards-news {
     background-color: var(--azulceleste-color);
-    width: 26.5vw;
+    width: auto;
     height: 16vh;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -312,79 +313,17 @@ aside {
     justify-content: space-between;
 }
 
-.trending-cards-news-img {
-    width: 30%;
-}
-
 .trending-cards-news-content {
     width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 0.8rem;
+    margin-left: 10%;
 }
 
-.trending-cards-news-content-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer {
-    width: 100%;
-    min-height: 250px;
-    background: grey;
-    display: flex;
-
-
-}
-
-footer .boxs {
-    width: 320px;
-    min-height: 150px;
-    padding: 20px;
-
-}
-
-footer .boxs:nth-child(4) {
-    width: 400px;
-
-}
-
-.boxs h2 {
-    color: white;
-    margin-bottom: 20px;
-
-}
-
-.boxs ul li {
-    margin: 10px 0px;
-    list-style: none;
-
-}
-
-.boxs ul li a {
-    color: black;
-    text-decoration: none;
-}
-
-.boxs ul li a:hover {
-    color: #fff;
-
-}
-
-.boxs p {
-    color: black;
-    text-align: justify;
-
-}
-
-.input {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 4px;
-
+.trending-cards-news-img {
+    width: 40%;
 }
 
 .input input {
@@ -410,14 +349,6 @@ footer .boxs:nth-child(4) {
     opacity: 0.8;
 }
 
-.footer_copyright {
-
-    background-color: purple;
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
-    justify-content: center;
-}
 
 @media (max-width: 1280px) {
     .container {
@@ -556,3 +487,115 @@ footer .boxs:nth-child(4) {
         margin: 3% 35%;
     }
 }
+
+/* Estilos das caixas */
+.box {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+/* Estilos para a caixa "Se Inscreva" */
+.subscribe {
+    order: 1; /* Aparecerá primeiro */
+    display: flex; /* Coloca o título, o parágrafo e a caixa de inscrição lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Adiciona espaçamento entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center;
+    margin-left: 30px;
+}
+
+/* Estilos para o título "Se Inscreva" */
+.subscribe h2 {
+    margin: 0; /* Remove as margens padrão */
+    font-size: 24px;
+    width: 100%;
+}
+
+/* Estilos para o parágrafo "Digite seu e-mail..." */
+.subscribe p {
+    margin-top: 10px; /* Adiciona um espaçamento entre o título e o parágrafo */
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilos para a caixa de inscrição (ajuste conforme necessário) */
+.subscribe .subscribe-input {
+    display: flex; /* Alinha os elementos da caixa de inscrição lado a lado */
+    
+}
+
+.subscribe .subscribe-input input[type="email"] {
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Estilos para o botão de inscrição (ajuste conforme necessário) */
+.subscribe .subscribe-input button {
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    background-color: #000;
+    cursor: pointer;
+    height: 35px;
+    width: 100%;
+    margin-right: 60px;
+}
+
+.site-map-contact{
+    display: flex; /* Exibe as caixas "site-map," "contact-info," e "about-us" lado a lado */
+    background-color: #000;
+    color: #fff;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.site-map-contact h2{
+    font-size: 24px;
+}
+
+.site-map-contact p{
+    font-size: 16px;
+}
+
+.site-map, .contact-info, .about-us {
+margin: 10px;
+}
+.site-map {
+    margin-left: 30px;
+    }
+
+.site-map ul {
+ list-style: none;
+}
+
+.contact-info{
+    width: 400px;
+}
+
+.contact-info ul{
+    list-style: none;
+}
+
+.about-us p {
+width: 400px;
+margin-right: 30px;
+}
+
+.footer_copyright {
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    height: 30px;
+    width: 100%;
+    display: block;
+}
+
+.site-map-contact, .copyright{
+    margin: 0;
+    padding: 0;
+    }
