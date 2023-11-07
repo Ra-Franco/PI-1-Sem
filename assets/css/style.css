@@ -265,17 +265,21 @@ aside {
 
 .main-trending {
     display: flex;
-    background-color: var(--branco-color);
+    background-color: var(--azulmarinho-color);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
     width: 100%;
     align-items: center;
     padding: 1vw 0;
     margin-right: 2rem;
     justify-content: space-between;
     border-radius: 7px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .main-trending p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-left: 1vw;
 }
 
@@ -305,21 +309,22 @@ aside {
 }
 
 .trending-cards-news-items {
+    text-align: center;
+    margin-top: 0%;
     display: flex;
     padding: 1.5rem;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    justify-content: space-between;
 }
 
 .trending-cards-news-content {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-size: 0.8rem;
-    margin-left: 10%;
+    display: block;
+    text-align: center;
 }
 
 .trending-cards-news-img {
@@ -394,6 +399,7 @@ aside {
         margin: 3% 45%;
     }
 }
+
 
 @media (max-width: 1024px) {
     body {
@@ -488,68 +494,75 @@ aside {
     }
 }
 
+
 /* Estilos das caixas */
 .box {
     padding: 20px;
     margin: 10px;
-    background-color: #f0f0f0;
-    width: 100%;
+    width: auto;
 }
 
 /* Estilos para a caixa "Se Inscreva" */
 .subscribe {
-    order: 1; /* Aparecerá primeiro */
-    display: flex; /* Coloca o título, o parágrafo e a caixa de inscrição lado a lado */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-between; /* Adiciona espaçamento entre os elementos */
-    width: 100%; /* Ocupa toda a largura disponível */
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: center;
-    margin-left: 30px;
+    background-color:#fff; /* Cor de fundo laranja */
+    color: #000; /* Texto branco */
+    padding: 10px; /* Espaçamento interno aumentado */
+    margin-left: 0%;
 }
 
 /* Estilos para o título "Se Inscreva" */
 .subscribe h2 {
-    margin: 0; /* Remove as margens padrão */
-    font-size: 24px;
-    width: 100%;
+    margin: 0;
+    font-size: 24px; /* Tamanho da fonte aumentado significativamente */
 }
 
-/* Estilos para o parágrafo "Digite seu e-mail..." */
+/* Estilos para o texto na caixa "Se Inscreva" */
 .subscribe p {
-    margin-top: 10px; /* Adiciona um espaçamento entre o título e o parágrafo */
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 16px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Tamanho da fonte aumentado */
 }
 
-/* Estilos para a caixa de inscrição (ajuste conforme necessário) */
 .subscribe .subscribe-input {
-    display: flex; /* Alinha os elementos da caixa de inscrição lado a lado */
+    display: flex; 
     
 }
 
 .subscribe .subscribe-input input[type="email"] {
-    width: 100%; /* Ocupa toda a largura disponível */
+    width: 100%; 
+    margin-top: 20px;
+    align-items: center;
 }
 
-/* Estilos para o botão de inscrição (ajuste conforme necessário) */
 .subscribe .subscribe-input button {
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
+    margin-top: 20px;
+    color: #fff; 
+    border: none; 
     background-color: #000;
     cursor: pointer;
     height: 35px;
     width: 100%;
     margin-right: 60px;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .site-map-contact{
-    display: flex; /* Exibe as caixas "site-map," "contact-info," e "about-us" lado a lado */
+    display: flex; 
     background-color: #000;
     color: #fff;
     justify-content: space-between;
     height: auto;
     width: 100%;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    position: sticky;
 }
 
 .site-map-contact h2{
@@ -585,17 +598,48 @@ margin-right: 30px;
 }
 
 .footer_copyright {
-    background-color: #000;
+    background-color:black;
     color: #fff;
     justify-content: center;
     text-align: center;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     height: 30px;
     width: 100%;
     display: block;
+    position: sticky;
 }
 
 .site-map-contact, .copyright{
     margin: 0;
     padding: 0;
     }
+
+
+.navbarm{
+    background: white;
+}
+
+.navbarm a{
+    color: black;
+    list-style-type: none;
+}
+
+.nav-listm li{
+    list-style-type: none;
+    color: #000;
+    display: inline;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.second-navbar{
+    background-color: #23232e;
+}
+
+.topics-list li{
+    list-style-type: none;
+    display: inline;
+    color: #fff;
+    margin-right: 30px;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
