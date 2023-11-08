@@ -4,9 +4,10 @@ const apiKey = '1e35479029874b01b08bbdd1b9eef3d0';
 
 const language = 'pt'
 
-let qMain = 'mundo'
 let sortBy = 'relevancy'
-let dateFrom = '2023-10-24'
+let dateFrom = new Date().toJSON();
+
+console.log(dateFrom)
 
 function convertNewsApi(newsDetail) {
     const news = new News();
@@ -20,7 +21,7 @@ function convertNewsApi(newsDetail) {
     return news;
 }
 
-newsApi.getNews = (pageSize = 8, page = 1) => {
+newsApi.getNews = (pageSize = 8, page = 1, qMain) => {
     const url = `https://newsapi.org/v2/everything?q=${qMain}&from=${dateFrom}&pageSize=${pageSize}&page=${page}&language=${language}&sortBy=${sortBy}&apiKey=${apiKey}`;
 
     return fetch(url)

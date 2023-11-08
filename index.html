@@ -25,11 +25,12 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li class="nav-tab-items"><a id="mundo" href="mundo.html">Mundo</a></li>
-            <li class="nav-tab-items"><a id="politica" href="politica.html">Política</a></li>
-            <li class="nav-tab-items"><a id="economia" href="economia.html">Economia</a></li>
-            <li class="nav-tab-items"><a id="esportes" href="esportes.html">Esportes</a></li>
-            <li class="nav-tab-items"><a id="entretenimento" href="entretenimento.html">Entretenimento</a></li>
+            <li class="nav-tab-items"><a id="mundo" href="mundo.html" data-qmain="mundo">Mundo</a></li>
+            <li class="nav-tab-items"><a id="politica" href="politica.html" data-qmain="politica">Política</a></li>
+            <li class="nav-tab-items"><a id="economia" href="economia.html" data-qmain="Economia">Economia</a></li>
+            <li class="nav-tab-items"><a id="esportes" href="esportes.html" data-qmain="Esportes">Esportes</a></li>
+            <li class="nav-tab-items"><a id="entretenimento" href="entretenimento.html"
+                    data-qmain="Entretenimento">Entretenimento</a></li>
         </ul>
         <i class="uil uil-search search-icon" id="searchIcon"></i>
         <div class="search-box">
@@ -37,111 +38,165 @@
             <input type="text" placeholder="Encontre o que procura...">
         </div>
     </nav>
-  <!--Corpo do site-->
-  <div class="container">
-    <main>
-        <div class="main-header-title">
-            <h1>Últimas notícias</h1>
-            <span class="line"></span>
-        </div>
-        <div class="news-cards-header">
-            <ol id="news-cards" class="news-cards">
-            </ol>
-        </div>
-        <button id="viewMoreButton" class="btn">Veja Mais</button>
-    </main>
-    <aside>
-        <div class="trending">
-            <div class="main-trending">
-                <p>Destaques</p>
+    <!--Corpo do site-->
+    <div class="container">
+        <main>
+            <div class="main-header-title">
+                <h1>Últimas notícias</h1>
+                <span class="line"></span>
             </div>
-        </div>
-        <div class="trending-cards">
-            <a href="">
+            <div class="news-cards-header">
+                <ol id="news-cards" class="news-cards">
+                </ol>
+            </div>
+            <button id="viewMoreButton" class="btn">Veja Mais</button>
+        </main>
+        <aside>
+            <div class="trending">
+                <div class="main-trending">
+                    <p>Destaques</p>
+                </div>
+            </div>
+            <div class="trending-cards">
+                <a href="">
                     <div class="trending-cards-news">
                         <div class="trending-cards-news-items">
-                        <div class="trending-cards-news-content">
-                            <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><h2>NFL: onde assistir aos jogos da Semana 8</h2></a>
-                            <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal liga de futebol...</p></a>
-                        </div>
+                            <div class="trending-cards-news-content">
+                                <a
+                                    href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                                    <h2>NFL: onde assistir aos jogos da Semana 8</h2>
+                                </a>
+                                <a
+                                    href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                                    <p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL,
+                                        principal liga de futebol...</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+            </div>
             </a>
             <div class="trending-cards-news">
                 <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2023/11/06/site-vaza-uniforme-da-selecao-para-2024-que-deve-ter-escudo-no-meio-veja.ghtml"><h2>Site vaza uniforme da Seleção para 2024</h2></a>
-                    <a href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2023/11/06/site-vaza-uniforme-da-selecao-para-2024-que-deve-ter-escudo-no-meio-veja.ghtml"><p>A camisa do Brasil para Copa América terá mudança, que não ocorria há 20 anos</p></a>
-                </div>
-                </div>
-            </div>
-            <div class="trending-cards-news">
-                <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/11/06/peca-sacra-do-seculo-xviii-e-tombada-pelo-iphan-e-furtada-de-igreja-no-centro-do-rio.ghtml"><h2>Homem invade igreja no Rio e rouba peça do século XVIII</h2></a>
-                    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/11/06/peca-sacra-do-seculo-xviii-e-tombada-pelo-iphan-e-furtada-de-igreja-no-centro-do-rio.ghtml"><p>No último sábado, um ladrão roubou um ostensório. Segundo o padre Álvaro, responsável pela igreja...</p></a>
-                </div>
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2023/11/06/site-vaza-uniforme-da-selecao-para-2024-que-deve-ter-escudo-no-meio-veja.ghtml">
+                            <h2>Site vaza uniforme da Seleção para 2024</h2>
+                        </a>
+                        <a
+                            href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2023/11/06/site-vaza-uniforme-da-selecao-para-2024-que-deve-ter-escudo-no-meio-veja.ghtml">
+                            <p>A camisa do Brasil para Copa América terá mudança, que não ocorria há 20 anos</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="trending-cards-news">
                 <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://www.cnnbrasil.com.br/nacional/mec-descarta-cancelamento-do-enem-apos-vazamento-de-provas/"><h2>MEC descarta cancelamento do Enem após vazamento</h2></a>
-                    <a href="https://www.cnnbrasil.com.br/nacional/mec-descarta-cancelamento-do-enem-apos-vazamento-de-provas/"><p>“De forma alguma”, disse o ministro da Educação, Camilo Santana...</p></a>
-                </div>
-                </div>
-            </div>
-            <div class="trending-cards-news">
-                <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><h2>NFL: onde assistir aos jogos da Semana 8</h2></a>
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal liga de futebol...</p></a>
-                </div>
-                </div>
-            </div>
-            <div class="trending-cards-news">
-                <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><h2>NFL: onde assistir aos jogos da Semana 8</h2></a>
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal liga de futebol...</p></a>
-                </div>
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/11/06/peca-sacra-do-seculo-xviii-e-tombada-pelo-iphan-e-furtada-de-igreja-no-centro-do-rio.ghtml">
+                            <h2>Homem invade igreja no Rio e rouba peça do século XVIII</h2>
+                        </a>
+                        <a
+                            href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/11/06/peca-sacra-do-seculo-xviii-e-tombada-pelo-iphan-e-furtada-de-igreja-no-centro-do-rio.ghtml">
+                            <p>No último sábado, um ladrão roubou um ostensório. Segundo o padre Álvaro, responsável
+                                pela igreja...</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="trending-cards-news">
                 <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><h2>NFL: onde assistir aos jogos da Semana 8</h2></a>
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal liga de futebol...</p></a>
-                </div>
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://www.cnnbrasil.com.br/nacional/mec-descarta-cancelamento-do-enem-apos-vazamento-de-provas/">
+                            <h2>MEC descarta cancelamento do Enem após vazamento</h2>
+                        </a>
+                        <a
+                            href="https://www.cnnbrasil.com.br/nacional/mec-descarta-cancelamento-do-enem-apos-vazamento-de-provas/">
+                            <p>“De forma alguma”, disse o ministro da Educação, Camilo Santana...</p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="trending-cards-news">
                 <div class="trending-cards-news-items">
-                <div class="trending-cards-news-content">
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><h2>NFL: onde assistir aos jogos da Semana 8</h2></a>
-                    <a href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/"><p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal liga de futebol...</p></a>
-                </div>
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <h2>NFL: onde assistir aos jogos da Semana 8</h2>
+                        </a>
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal
+                                liga de futebol...</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="trending-cards-news">
+                <div class="trending-cards-news-items">
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <h2>NFL: onde assistir aos jogos da Semana 8</h2>
+                        </a>
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal
+                                liga de futebol...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-cards-news">
+                <div class="trending-cards-news-items">
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <h2>NFL: onde assistir aos jogos da Semana 8</h2>
+                        </a>
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal
+                                liga de futebol...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-cards-news">
+                <div class="trending-cards-news-items">
+                    <div class="trending-cards-news-content">
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <h2>NFL: onde assistir aos jogos da Semana 8</h2>
+                        </a>
+                        <a
+                            href="https://olhardigital.com.br/2023/10/24/internet-e-redes-sociais/nfl-onde-assistir-aos-jogos-da-semana-8/">
+                            <p>Confira onde assistir a todos os jogos da Semana 8 da temporada 2023 da NFL, principal
+                                liga de futebol...</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
     </aside>
-</div>
+    </div>
 
 
     <!--Assinar -->
     <div class="box subscribe">
-            <div class="subscribe-header">
-                <h2>Seja o Primeiro a Saber:</h2>
-                <p>Digite seu e-mail e junte-se à nossa comunidade de notícias!</p>
-            </div>
-            <div class="subscribe-input">
-                <input type="email" id="email">
-                <button>Enviar</button>
-            </div>
+        <div class="subscribe-header">
+            <h2>Seja o Primeiro a Saber:</h2>
+            <p>Digite seu e-mail e junte-se à nossa comunidade de notícias!</p>
+        </div>
+        <div class="subscribe-input">
+            <input type="email" id="email">
+            <button>Enviar</button>
+        </div>
     </div>
 
-     <!-- Rodapé -->
+    <!-- Rodapé -->
     <footer>
         <div class="box site-map-contact">
             <div class="site-map">
@@ -161,15 +216,23 @@
                 <!-- Contato -->
                 <h2>sugestões e reclamações</h2>
                 <ul>
-                    <li><a href="mailto:contato@primeirapagina.com.br"> Clique e envie um e-mail. <br><p>contato@primeirapagina.com.br</p></a></li>
+                    <li><a href="mailto:contato@primeirapagina.com.br"> Clique e envie um e-mail. <br>
+                            <p>contato@primeirapagina.com.br</p>
+                        </a></li>
                     <br>
-                    <li><a href="tel:+5516123456789">Clique e ligue para nós. <br> <p>+55 16 12345 6789</p></a></li>
+                    <li><a href="tel:+5516123456789">Clique e ligue para nós. <br>
+                            <p>+55 16 12345 6789</p>
+                        </a></li>
                 </ul>
             </div>
             <div class="about-us">
                 <!-- Sobre nós -->
                 <h2>sobre nós</h2>
-                <p>Primeira Página - Sua Janela para o Mundo. Fundado com a paixão por relatar os eventos mais importantes, nossa missão é trazer notícias precisas e imparciais para mantê-lo atualizado sobre os eventos mais relevantes do mundo. Com uma equipe dedicada de jornalistas, estamos comprometidos em fornecer a você as histórias que importam. Confie em nós para trazer a verdade, a objetividade e a clareza para o seu dia a dia.</p>
+                <p>Primeira Página - Sua Janela para o Mundo. Fundado com a paixão por relatar os eventos mais
+                    importantes, nossa missão é trazer notícias precisas e imparciais para mantê-lo atualizado sobre os
+                    eventos mais relevantes do mundo. Com uma equipe dedicada de jornalistas, estamos comprometidos em
+                    fornecer a você as histórias que importam. Confie em nós para trazer a verdade, a objetividade e a
+                    clareza para o seu dia a dia.</p>
             </div>
         </div>
         <div class="box copyright">

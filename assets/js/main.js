@@ -1,15 +1,10 @@
 let pageSize = 8;
 let page = 1;
 
-const newsList = document.getElementById('news-cards')
-const viewMoreButton = document.getElementById('viewMoreButton')
+const newsList = document.getElementById('news-cards');
+const viewMoreButton = document.getElementById('viewMoreButton');
 
-viewMoreButton.addEventListener('click', () => {
-    page += 1;
-    loadNewsItems(pageSize, page);
-})
-
-function loadNewsItems(pageSize, qMain) {
+function loadNewsItems(pageSize, page, qMain) {
     newsApi.getNews(pageSize, page, qMain).then((newsPromise = []) => {
         const newsPromiseFilter = newsPromise.filter((news) => news.author !== null || news.title !== "[Removed]" || news.urlToImage !== null)
         const newHtml = newsPromiseFilter.map((news) =>
@@ -36,4 +31,12 @@ function loadNewsItems(pageSize, qMain) {
         newsList.innerHTML += newHtml
     })
 }
-//loadNewsItems(pageSize, qMain);
+
+viewMoreButton.addEventListener('click', () => {
+    page += 1;
+    const newQMain = viewMoreButton.getAttribute('data-qmain');
+    loadNewsItems(pageSize, page, newQMain);
+});
+
+const currentPageCategory = document.querySelector('#viewMoreButton').getAttribute('data-qmain');
+loadNewsItems(pageSize, page, currentPageCategory);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <!-- Adicione outros links de estilo, se necessário -->
     <title>Página Mundo</title>
     <link rel="shortcut icon" href="./assets/img/LOGO.ico" type="image/x-icon">
-    <script src="assets/js/mundo.js" defer></script> <!-- Substitua 'mundo.js' pelo nome do seu arquivo JS específico para esta página -->
+    <script src="assets/js/news-model.js" defer></script>
+    <script src="./assets/js/news-api.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
 </head>
+
 <body>
     <!-- Primeira Barra de Navegação (semelhante à da primeira página) -->
     <nav class="navbarm">
@@ -18,12 +22,13 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <ul class="nav-listm">
-            <li class="nav-tab-items"><a id="mundo" href="mundo.html">Mundo</a></li>
-            <li class="nav-tab-items"><a id="politica" href="politica.html">Política</a></li>
-            <li class="nav-tab-items"><a id="economia" href="economia.html">Economia</a></li>
-            <li class="nav-tab-items"><a id="esportes" href="esportes.html">Esportes</a></li>
-            <li class="nav-tab-items"><a id="entretenimento" href="entretenimento.html">Entretenimento</a></li>
+        <ul class="nav-list">
+            <li class="nav-tab-items"><a id="mundo" href="mundo.html" data-qmain="mundo">Mundo</a></li>
+            <li class="nav-tab-items"><a id="politica" href="politica.html" data-qmain="politica">Política</a></li>
+            <li class="nav-tab-items"><a id="economia" href="economia.html" data-qmain="Economia">Economia</a></li>
+            <li class="nav-tab-items"><a id="esportes" href="esportes.html" data-qmain="Esportes">Esportes</a></li>
+            <li class="nav-tab-items"><a id="entretenimento" href="entretenimento.html"
+                    data-qmain="Entretenimento">Entretenimento</a></li>
         </ul>
     </nav>
 
@@ -37,51 +42,67 @@
             <li><a href="#">8 Bilhões no Mundo</a></li>
         </ul>
     </nav>
-    <div style="height: 1000px;"> Aqui estarão os conteúdos</div>
-                <!-- Rodapé -->
-                <footer>
-                    <div class="box site-map-contact">
-                        <div class="site-map">
-                            <!-- Conteúdo do Mapa do Site -->
-                            <h2>mapa do site</h2>
-                            <ul>
-                                <li><a href="index.html">Início</a></li>
-                                <li><a href="mundo.html">Mundo</a></li>
-                                <li><a href="politica.html">Política</a></li>
-                                <li><a href="economia.html">Economia</a></li>
-                                <li><a href="esportes.html">Esportes</a></li>
-                                <li><a href="entretenimento.html">Entretenimento</a></li>
-                            </ul>
-                        </div>
-                        <div class="contact-info">
-                            <!-- Conteúdo das Informações de Contato -->
-                            <h2>sugestões e reclamações</h2>
-                            <ul>
-                                <li><a href="mailto:contato@primeirapagina.com.br"> Clique e envie um e-mail. <br>
-                                        <p>contato@primeirapagina.com.br</p>
-                                    </a></li>
-                                <br>
-                                <li><a href="tel:+5516123456789">Clique e ligue para nós. <br>
-                                        <p>+55 16 12345 6789</p>
-                                    </a></li>
-                            </ul>
-                        </div>
-                        <div class="about-us">
-                            <!-- Conteúdo de "Sobre nós" -->
-                            <h2>sobre nós</h2>
-                            <p>Primeira Página - Sua Janela para o Mundo. Fundado com a paixão por relatar os eventos mais importantes,
-                                nossa missão é trazer notícias precisas e imparciais para mantê-lo atualizado sobre os eventos mais
-                                relevantes do mundo. Com uma equipe dedicada de jornalistas, estamos comprometidos em fornecer a você as
-                                histórias que importam. Confie em nós para trazer a verdade, a objetividade e a clareza para o seu dia a
-                                dia.</p>
-                        </div>
-                    </div>
-                    <div class="box copyright">
-                        <!-- Conteúdo de "2023 Direitos Autorais" -->
-                        <div class="footer_copyright">
-                            &#169 2023 all rights reserved
-                        </div>
-                    </div>
-                </footer>
-                </body>
+    <div>
+        <main>
+            <div class="main-header-title">
+                <h1>Últimas notícias</h1>
+                <span class="line"></span>
+            </div>
+            <div class="news-cards-header">
+                <ol id="news-cards" class="news-cards">
+                </ol>
+            </div>
+            <button id="viewMoreButton" class="btn" data-qmain="mundo">Veja Mais</button>
+        </main>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <div class="box site-map-contact">
+            <div class="site-map">
+                <!-- Conteúdo do Mapa do Site -->
+                <h2>mapa do site</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="mundo.html">Mundo</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                    <li><a href="economia.html">Economia</a></li>
+                    <li><a href="esportes.html">Esportes</a></li>
+                    <li><a href="entretenimento.html">Entretenimento</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <!-- Conteúdo das Informações de Contato -->
+                <h2>sugestões e reclamações</h2>
+                <ul>
+                    <li><a href="mailto:contato@primeirapagina.com.br"> Clique e envie um e-mail. <br>
+                            <p>contato@primeirapagina.com.br</p>
+                        </a></li>
+                    <br>
+                    <li><a href="tel:+5516123456789">Clique e ligue para nós. <br>
+                            <p>+55 16 12345 6789</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="about-us">
+                <!-- Conteúdo de "Sobre nós" -->
+                <h2>sobre nós</h2>
+                <p>Primeira Página - Sua Janela para o Mundo. Fundado com a paixão por relatar os eventos mais
+                    importantes,
+                    nossa missão é trazer notícias precisas e imparciais para mantê-lo atualizado sobre os eventos mais
+                    relevantes do mundo. Com uma equipe dedicada de jornalistas, estamos comprometidos em fornecer a
+                    você as
+                    histórias que importam. Confie em nós para trazer a verdade, a objetividade e a clareza para o seu
+                    dia a
+                    dia.</p>
+            </div>
+        </div>
+        <div class="box copyright">
+            <!-- Conteúdo de "2023 Direitos Autorais" -->
+            <div class="footer_copyright">
+                &#169 2023 all rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
