@@ -293,7 +293,7 @@ aside {
     margin-right: 2rem;
 }
 
-.trending-cards {
+#trending-cards {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -511,40 +511,45 @@ aside {
     justify-content: center;
     width: 100%;
     text-align: center;
-    background-color:#fff; /* Cor de fundo laranja */
-    color: #000; /* Texto branco */
-    padding: 10px; /* Espaçamento interno aumentado */
+    background-color: #fff;
+    /* Cor de fundo laranja */
+    color: #000;
+    /* Texto branco */
+    padding: 10px;
+    /* Espaçamento interno aumentado */
     margin-left: 0%;
 }
 
 /* Estilos para o título "Se Inscreva" */
 .subscribe h2 {
     margin: 0;
-    font-size: 24px; /* Tamanho da fonte aumentado significativamente */
+    font-size: 24px;
+    /* Tamanho da fonte aumentado significativamente */
 }
 
 /* Estilos para o texto na caixa "Se Inscreva" */
 .subscribe p {
     margin-top: 15px;
     font-family: Arial, sans-serif;
-    font-size: 20px; /* Tamanho da fonte aumentado */
+    font-size: 20px;
+    /* Tamanho da fonte aumentado */
 }
 
 .subscribe .subscribe-input {
-    display: flex; 
-    
+    display: flex;
+
 }
 
 .subscribe .subscribe-input input[type="email"] {
-    width: 100%; 
+    width: 100%;
     margin-top: 20px;
     align-items: center;
 }
 
 .subscribe .subscribe-input button {
     margin-top: 20px;
-    color: #fff; 
-    border: none; 
+    color: #fff;
+    border: none;
     background-color: #000;
     cursor: pointer;
     height: 35px;
@@ -554,8 +559,8 @@ aside {
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
-.site-map-contact{
-    display: flex; 
+.site-map-contact {
+    display: flex;
     background-color: #000;
     color: #fff;
     justify-content: space-between;
@@ -565,40 +570,43 @@ aside {
     position: sticky;
 }
 
-.site-map-contact h2{
+.site-map-contact h2 {
     font-size: 24px;
 }
 
-.site-map-contact p{
+.site-map-contact p {
     font-size: 16px;
 }
 
-.site-map, .contact-info, .about-us {
-margin: 10px;
+.site-map,
+.contact-info,
+.about-us {
+    margin: 10px;
 }
+
 .site-map {
     margin-left: 30px;
-    }
-
-.site-map ul {
- list-style: none;
 }
 
-.contact-info{
+.site-map ul {
+    list-style: none;
+}
+
+.contact-info {
     width: 400px;
 }
 
-.contact-info ul{
+.contact-info ul {
     list-style: none;
 }
 
 .about-us p {
-width: 400px;
-margin-right: 30px;
+    width: 400px;
+    margin-right: 30px;
 }
 
 .footer_copyright {
-    background-color:black;
+    background-color: black;
     color: #fff;
     justify-content: center;
     text-align: center;
@@ -609,22 +617,23 @@ margin-right: 30px;
     position: sticky;
 }
 
-.site-map-contact, .copyright{
+.site-map-contact,
+.copyright {
     margin: 0;
     padding: 0;
-    }
+}
 
 
-.navbarm{
+.navbarm {
     background: white;
 }
 
-.navbarm a{
+.navbarm a {
     color: black;
     list-style-type: none;
 }
 
-.nav-listm li{
+.nav-listm li {
     list-style-type: none;
     color: #000;
     display: inline;
@@ -632,11 +641,11 @@ margin-right: 30px;
     text-align: center;
 }
 
-.second-navbar{
+.second-navbar {
     background-color: #23232e;
 }
 
-.topics-list li{
+.topics-list li {
     list-style-type: none;
     display: inline;
     color: #fff;
