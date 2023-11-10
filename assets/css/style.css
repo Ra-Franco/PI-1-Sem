@@ -293,7 +293,7 @@ aside {
     margin-right: 2rem;
 }
 
-.trending-cards {
+#trending-cards {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -609,11 +609,7 @@ aside {
     list-style: none;
 }
 
-.site-map, .contact-info, .about-us{
-    align-self: center;
-}
-
-.contact-info {
+.contact-info{
     width: 400px;
 }
 
