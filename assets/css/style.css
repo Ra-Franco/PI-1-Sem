@@ -137,6 +137,10 @@ nav {
     transform: translateX(0);
 }
 
+.active{
+    color: var(--azulceleste-color);
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -302,7 +306,7 @@ aside {
 .trending-cards-news {
     background-color: var(--azulceleste-color);
     width: auto;
-    height: 16vh;
+    height: 25vh;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
@@ -312,6 +316,7 @@ aside {
     text-align: center;
     margin-top: 0%;
     display: flex;
+    justify-content: center;
     padding: 1.5rem;
     flex-direction: column;
     width: 100%;
@@ -528,13 +533,13 @@ aside {
     justify-content: center;
     width: 100%;
     text-align: center;
-    background-color: #fff;
-    /* Cor de fundo laranja */
-    color: #000;
+    background-color: var(--preto-color);
     /* Texto branco */
     padding: 10px;
     /* Espaçamento interno aumentado */
-    margin-left: 0%;
+    margin: 0%;
+    border-top: 1px solid #292828;
+    border-bottom: 1px solid #292828;
 }
 
 /* Estilos para o título "Se Inscreva" */
@@ -552,15 +557,17 @@ aside {
     /* Tamanho da fonte aumentado */
 }
 
+
 .subscribe .subscribe-input {
     display: flex;
+    width: 50%;
 
 }
 
 .subscribe .subscribe-input input[type="email"] {
     width: 100%;
     margin-top: 20px;
-    align-items: center;
+    border-style: none;
 }
 
 .subscribe .subscribe-input button {
@@ -570,8 +577,7 @@ aside {
     background-color: #000;
     cursor: pointer;
     height: 35px;
-    width: 100%;
-    margin-right: 60px;
+    width: 20%;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
@@ -585,6 +591,7 @@ aside {
     width: 100%;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     position: sticky;
+    border-top: 1px solid var(--cinzaescuro-color);
 }
 
 .site-map-contact h2 {
@@ -607,6 +614,16 @@ aside {
 
 .site-map ul {
     list-style: none;
+}
+
+.site-map, .contact-info, .about-us{
+    align-self: center;
+}
+
+.titulo-footer{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .contact-info{
