@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--cinzapalido-color);
+    background-color: var(--cinzamedio-color);
 }
 
 a:link {
@@ -105,7 +105,7 @@ nav {
 .search-box input {
     height: 100%;
     width: 100%;
-    background-color: var(--branco-color);
+    background-color: var(--cinzaescuro-color);
     border: none;
     outline: none;
     border-radius: 6px;
@@ -186,6 +186,7 @@ aside {
     display: flex;
     justify-content: center;
     padding: 3rem 0;
+    margin-inline: 1rem;
 }
 
 .line {
@@ -201,9 +202,10 @@ aside {
 
 .main-header-title h1 {
     text-align: center;
-    font-size: 2.5rem;
-    padding-right: 5rem;
+    font-size: 2rem;
+    padding-right: 1rem;
     white-space: nowrap;
+    text-transform: uppercase;
 }
 
 .news-cards-header {
@@ -276,15 +278,13 @@ aside {
     width: 100%;
     align-items: center;
     padding: 1vw 0;
-    margin-right: 2rem;
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 7px;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
 }
 
 .main-trending p {
     font-size: 1.5rem;
-    padding-left: 1vw;
 }
 
 .main-trending-button {
@@ -514,9 +514,15 @@ aside {
         right: 50%;
         transform: translateX(50%);
     }
+
+    .container{
+        padding: 0%;
+    }
 }
 
-
+footer{
+    bottom: 50%;
+}
 /* Estilos das caixas */
 .box {
     padding: 20px;
@@ -564,6 +570,7 @@ aside {
 
 }
 
+
 .subscribe .subscribe-input input[type="email"] {
     width: 100%;
     margin-top: 20px;
@@ -574,7 +581,7 @@ aside {
     margin-top: 20px;
     color: #fff;
     border: none;
-    background-color: #000;
+    background-color: var(--azulceleste-color);
     cursor: pointer;
     height: 35px;
     width: 20%;
@@ -587,7 +594,7 @@ aside {
     background-color: #000;
     color: #fff;
     justify-content: space-between;
-    height: auto;
+    height: 50vh;
     width: 100%;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     position: sticky;
@@ -623,7 +630,12 @@ aside {
 .titulo-footer{
     font-size: 24px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    color: var(--branco-color);
+}
+
+p{
+    color: var(--branco-color);
 }
 
 .contact-info{
@@ -678,11 +690,14 @@ aside {
 .second-navbar {
     background-color: #23232e;
 }
-
 .topics-list li {
     list-style-type: none;
     display: inline;
+    justify-content: space-around;
     color: #fff;
-    margin-right: 30px;
+    margin-right: 190px;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+footer{
+    opacity: 0.9;
 }
