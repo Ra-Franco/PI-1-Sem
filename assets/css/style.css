@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--cinzamedio-color);
+    background-color: var(--cinzaescuro-color);
 }
 
 a:link {
@@ -206,6 +206,7 @@ aside {
     padding-right: 1rem;
     white-space: nowrap;
     text-transform: uppercase;
+    color: var(--branco-color);
 }
 
 .news-cards-header {
@@ -304,12 +305,13 @@ aside {
 }
 
 .trending-cards-news {
-    background-color: var(--azulceleste-color);
+    background-color: #23232e;
     width: auto;
     height: 25vh;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    box-shadow: 20px 20px 10px
 }
 
 .trending-cards-news-items {
@@ -461,6 +463,16 @@ aside {
 @media (max-width: 768px) {
     body{
         overflow: hidden;
+    }
+    .site-map-contact {
+        display: flex;
+        background-color: #000;
+        color: #fff;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50%;
+        width: 100%;
+        position: sticky;
     }
     .news-cards {
         display: flex;
