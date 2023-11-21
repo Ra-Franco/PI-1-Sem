@@ -311,7 +311,7 @@ aside {
     border-radius: 8px;
     margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-    box-shadow: 20px 20px 10px
+    box-shadow: 20px 20px 10px #000;
 }
 
 .trending-cards-news-items {
@@ -465,15 +465,21 @@ aside {
         overflow: hidden;
     }
     .site-map-contact {
-        display: flex;
-        background-color: #000;
-        color: #fff;
         flex-direction: column;
-        justify-content: space-between;
-        height: 50%;
-        width: 100%;
-        position: sticky;
     }
+    .site-map ul , .contact-info {
+        text-align: center;
+    }
+    .titulo-footer{
+        letter-spacing: 1px;
+    }
+    .about-us{
+        visibility: hidden;
+    }
+    .subscribe{
+        height: 29vh;
+    }
+
     .news-cards {
         display: flex;
         justify-content: center;
@@ -606,7 +612,7 @@ footer{
     background-color: #000;
     color: #fff;
     justify-content: space-between;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     position: sticky;
