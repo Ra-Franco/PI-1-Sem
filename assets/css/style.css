@@ -135,6 +135,7 @@ nav {
 
 .nav-list.active {
     transform: translateX(0);
+    z-index: 1;
 }
 
 .active{
@@ -697,7 +698,7 @@ p{
     list-style-type: none;
 }
 
-.nav-listm li {
+.nav-list li {
     list-style-type: none;
     color: #000;
     display: inline;
