@@ -58,5 +58,5 @@ Caso esteja interessado em contribuir ou explorar o código-fonte, sinta-se à v
 ### Autores
 Larissa Coutinho Ferreira, Leandro Borges da Silva, Ramon Franco de Camargo Castro, Sinomar Henrique Cotian Alves e Vinicius Lemes Ribeiro.
 
-
+O site pode ser acessado a partir do link : https://primeirapagina2.netlify.app/
 Explore, contribua e aproveite a experiência!
