@@ -56,11 +56,7 @@ Caso esteja interessado em contribuir ou explorar o código-fonte, sinta-se à v
 
 
 ### Autores
-Larissa Coutinho Ferreira
-Leandro Borges da Silva
-Ramon Franco de Camargo Castro
-Sinomar Henrique Cotian Alves
-Vinicius Lemes Ribeiro
+Larissa Coutinho Ferreira, Leandro Borges da Silva, Ramon Franco de Camargo Castro, Sinomar Henrique Cotian Alves e Vinicius Lemes Ribeiro.
 
 
 Explore, contribua e aproveite a experiência!
