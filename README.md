@@ -10,7 +10,7 @@ O Primeira Página é um site de notícias que abrange diversos tópicos, oferec
 - 📁 *assets*: Contém recursos como css, img e js.
   - 📁 *css*: Armazena os arquivos de estilo CSS.
   - 📁 *img*: Contém imagens utilizadas no site.
-  - 📁 *assets/js*: Scripts JavaScript utilizados no site. 
+  - 📁 *js*: Scripts JavaScript utilizados no site.
 - 📁 *.html*: Páginas HTML para diferentes seções do site (página inicial, economia, entretenimento, esportes, mundo, política, login). 
 
 ## Páginas Principais 
