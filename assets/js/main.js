@@ -21,7 +21,6 @@ function loadNewsItems(pageSize, page, qMain) {
                             <div class="news-cards-items-date">
                                 <p>By ${news.author}</p>
                                 <span></span>
-                                <p>${news.publishedDate}p>
                             </div>
                         </div>
                     </li>
